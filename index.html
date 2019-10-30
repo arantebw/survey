@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Project Survey Form</title>
+
+    <!-- Imports Bulma CSS framework -->
+    <link rel="stylesheet" href="css/bulma-0.8.0/css/bulma.min.css">
+
+  </head>
+  <body>
+
+    <header>
+      <h1 id="title" class="title">Project Survey Form</h1>
+      <p id="description">A <a href="https://www.freecodecamp.org">freeCodeCamp</a> "Responsive Web Design" developer certification project.</p>
+    </header>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input type="name" id="name" placeholder="Name" required>
+
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" placeholder="Email" required>
+
+      <label id="number-label" for="number">Phone Number</label>
+      <input type="number" id="number" placeholder="Phone number" min="0" max="99999999999">
+
+      <select id="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+    </form>
+
+    <footer>
+      <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://arantebw.github.io">Billy Arante</a> from Antique, Philippines</p>
+    </footer>
+
+    <!-- Imports Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <!-- Imports freeCodeCamp test suite -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+</html>
