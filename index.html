@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Project Survey Form</title>
+    <title>Nella Xam Store Survery Form</title>
 
     <!-- Imports Bulma CSS framework -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -13,8 +13,8 @@
   <body>
 
     <header>
-      <h1 id="title" class="title">Project Survey Form</h1>
-      <p id="description">A <a href="https://www.freecodecamp.org">freeCodeCamp</a> "Responsive Web Design" developer certification project.</p>
+      <h1 id="title" class="title">Nella Xam Store Survey Form</h1>
+      <p id="description">A quick survey for your feedback regarding your experiences with Nella Xam Store.</p>
     </header>
 
     <form id="survey-form">
@@ -32,9 +32,30 @@
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
       </select>
+
+      <fieldset>
+        <legend>Options with radio buttons</legend>
+        <input type="radio" name="options" value="option1"><label for="">Option 1</label>
+        <input type="radio" name="options" value="option2"><label for="">Option 2</label>
+        <input type="radio" name="options" value="option3"><label for="">Option 3</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Options with checkboxes</legend>
+        <input type="checkbox" name="checkboxes" value="option1"><label for="">Option 1</label>
+        <input type="checkbox" name="checkboxes" value="option2"><label for="">Option 2</label>
+        <input type="checkbox" name="checkboxes" value="option3"><label for="">Option 3</label>
+      </fieldset>
+
+      <label for="">Additional comments</label>
+      <textarea></textarea>
+
+      <button id="submit">Submit</button>
     </form>
 
+
     <footer>
+      <p id="description">A <a href="https://www.freecodecamp.org">freeCodeCamp</a> "Responsive Web Design" developer certification project.</p>
       <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://arantebw.github.io">Billy Arante</a> from Antique, Philippines</p>
     </footer>
 
