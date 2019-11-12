@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Project Survey Form</title>
+    <title>Nella Xam Store Survery Form</title>
 
     <!-- Imports Bulma CSS framework -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -13,28 +13,50 @@
   <body>
 
     <header>
-      <h1 id="title" class="title">Project Survey Form</h1>
-      <p id="description">A <a href="https://www.freecodecamp.org">freeCodeCamp</a> "Responsive Web Design" developer certification project.</p>
+      <h1 id="title" class="title">Nella Xam Store Survey Form</h1>
+      <p id="description">A quick survey for your feedback regarding your experiences with Nella Xam Store.</p>
     </header>
 
     <form id="survey-form">
       <label id="name-label" for="name">Name</label>
-      <input type="name" id="name" placeholder="Name" required>
+      <input type="name" id="name" placeholder="e.g., Juan Dela Cruz" required>
 
       <label id="email-label" for="email">Email</label>
-      <input type="email" id="email" placeholder="Email" required>
+      <input type="email" id="email" placeholder="e.g., juan.dela.cruz@gmail.com" required>
 
-      <label id="number-label" for="number">Phone Number</label>
-      <input type="number" id="number" placeholder="Phone number" min="0" max="99999999999">
+      <label id="number-label" for="number">Age (optional)</label>
+      <input type="number" id="number" placeholder="Enter your age here" min="0" max="100">
 
+      <label for="dropdown">Gender</label>
       <select id="dropdown">
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="non-binary">Non-Binary</option>
       </select>
+
+      <fieldset>
+        <legend>Would you recommend Nella Xam Store?</legend>
+        <input type="radio" name="recommend" value="yes" id="yes"><label for="yes">Yes</label>
+        <input type="radio" name="recommend" value="no" id="no"><label for="no">No</label>
+        <input type="radio" name="recommend" value="maybe" id="maybe"><label for="maybe">Maybe</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Options with checkboxes</legend>
+        <input type="checkbox" name="checkboxes" value="option1"><label for="">Option 1</label>
+        <input type="checkbox" name="checkboxes" value="option2"><label for="">Option 2</label>
+        <input type="checkbox" name="checkboxes" value="option3"><label for="">Option 3</label>
+      </fieldset>
+
+      <label for="">Additional comments</label>
+      <textarea></textarea>
+
+      <button id="submit">Submit</button>
     </form>
 
+
     <footer>
+      <p id="description">A <a href="https://www.freecodecamp.org">freeCodeCamp</a> "Responsive Web Design" developer certification project.</p>
       <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://arantebw.github.io">Billy Arante</a> from Antique, Philippines</p>
     </footer>
 
