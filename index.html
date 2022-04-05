@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Nella Xam Store Survery Form</title>
 
     <!-- Imports Bulma CSS framework -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
   </head>
   <body>
-
     <header>
       <div class="container">
         <h1 id="title" class="title">Nella Xam Store Survey Form</h1>
-        <p id="description">A quick survey for your feedback regarding your experiences with Nella Xam Store.</p>
+        <p id="description">
+          A quick survey for your feedback regarding your experiences with Nella
+          Xam Store.
+        </p>
       </div>
     </header>
 
     <form id="survey-form">
       <div class="container">
-
         <div class="field">
           <label id="name-label" class="label" for="name">Name</label>
           <div class="control">
-            <input type="name" id="name" class="input" placeholder="e.g., Juan Dela Cruz" required>
+            <input
+              type="name"
+              id="name"
+              class="input"
+              placeholder="e.g., Juan Dela Cruz"
+              required
+            />
           </div>
         </div>
 
         <div class="field">
           <label id="email-label" class="label" for="email">Email</label>
           <div class="control">
-            <input type="email" id="email" class="input" placeholder="e.g., juan.dela.cruz@gmail.com" required>
+            <input
+              type="email"
+              id="email"
+              class="input"
+              placeholder="e.g., juan.dela.cruz@gmail.com"
+              required
+            />
           </div>
         </div>
 
         <div class="field">
-          <label id="number-label" class="label" for="number">Age (optional)</label>
+          <label id="number-label" class="label" for="number"
+            >Age (optional)</label
+          >
           <div class="control">
-            <input type="number" id="number" class="input" placeholder="Enter your age here" min="0" max="100">
+            <input
+              type="number"
+              id="number"
+              class="input"
+              placeholder="Enter your age here"
+              min="0"
+              max="100"
+            />
           </div>
         </div>
 
@@ -59,43 +83,92 @@
 
         <fieldset class="field">
           <legend>Would you recommend Nella Xam Store?</legend>
-          <input type="radio" name="recommend" value="yes" id="yes"><label for="yes">Yes</label>
-          <input type="radio" name="recommend" value="no" id="no"><label for="no">No</label>
-          <input type="radio" name="recommend" value="maybe" id="maybe"><label for="maybe">Maybe</label>
+          <input type="radio" name="recommend" value="yes" id="yes" /><label
+            for="yes"
+            >Yes</label
+          >
+          <input type="radio" name="recommend" value="no" id="no" /><label
+            for="no"
+            >No</label
+          >
+          <input type="radio" name="recommend" value="maybe" id="maybe" /><label
+            for="maybe"
+            >Maybe</label
+          >
         </fieldset>
 
         <fieldset class="field">
           <legend>What are the things that you love with our store?</legend>
-          <input id="customer-service" type="checkbox" name="checkboxes" value="Customer Service"><label for="customer-service">Customer Service</label>
-          <input id="variety-of-products" type="checkbox" name="checkboxes" value="Variety of Products"><label for="variety-of-products">Variety of Products</label>
-          <input id="availability-of-products" type="checkbox" name="checkboxes" value="Availability of Products"><label for="availability-of-products">Availability of Products</label>
-          <input id="product-pricing" type="checkbox" name="checkboxes" value="Product Pricing"><label for="product-pricing">Product Pricing</label>
-          <input id="store-location" type="checkbox" name="checkboxes" value="Store Location"><label for="store-location">Store Location</label>
+          <input
+            id="customer-service"
+            type="checkbox"
+            name="checkboxes"
+            value="Customer Service"
+          /><label for="customer-service">Customer Service</label>
+          <input
+            id="variety-of-products"
+            type="checkbox"
+            name="checkboxes"
+            value="Variety of Products"
+          /><label for="variety-of-products">Variety of Products</label>
+          <input
+            id="availability-of-products"
+            type="checkbox"
+            name="checkboxes"
+            value="Availability of Products"
+          /><label for="availability-of-products"
+            >Availability of Products</label
+          >
+          <input
+            id="product-pricing"
+            type="checkbox"
+            name="checkboxes"
+            value="Product Pricing"
+          /><label for="product-pricing">Product Pricing</label>
+          <input
+            id="store-location"
+            type="checkbox"
+            name="checkboxes"
+            value="Store Location"
+          /><label for="store-location">Store Location</label>
         </fieldset>
 
         <div class="field">
           <label for="comments">Comments</label>
-          <textarea id="comments" placeholder="Enter your comments here"></textarea>
+          <textarea
+            id="comments"
+            placeholder="Enter your comments here"
+          ></textarea>
         </div>
 
         <button id="submit">Submit</button>
-
       </div>
     </form>
 
-
     <footer>
       <div class="container">
-        <p id="description">A <a href="https://www.freecodecamp.org">freeCodeCamp</a> Responsive Web Design Developer Certification project.</p>
-        <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://arantebw.github.io">Billy Arante</a> from Antique, Philippines</p>
+        <p id="description">
+          A
+          <a href="https://www.freecodecamp.org" target="_blank"
+            >freecodecamp.org</a
+          >'s "Responsive Web Design" developer certification project.
+        </p>
+        <p>
+          Made with <i class="fas fa-heart"></i> and
+          <i class="fas fa-coffee"></i> by
+          <a href="https://arantebw.github.io/portfolio">Billy Arante</a> from
+          Antique, Philippines
+        </p>
       </div>
     </footer>
 
     <!-- Imports Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
 
     <!-- Imports freeCodeCamp test suite -->
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
